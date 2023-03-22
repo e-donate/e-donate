@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="robots" content="nofollow,noindex">
+
+        <!-- Open Scene Graph -->
+        <meta property="og:title" content="CV Online">
+        <meta property="og:descripcion" content="Proyecto Integrador - Argentina Programa 4.0 + Ticmas - Generador de CV">
+        <meta property="og:url" content="https://admred.github.io/cv-online">
+
+        <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="styles.css">
+        <script rel="javascript" src="actions.js" defer></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" crossorigin="anonymous">
+
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <div class="row">
+                    <button onclick="reload();" id="reload-page" class="reload"><span class="material-icons">cached</span></button>
+                    <div class="container">
+                        <img class="foto" id="picture" src="images/foto-perfil.jpg" width="200px" alt="Foto de perfil."/>
+                    </div>
+                    <hgroup class="container cabecera">
+                        <h1 class="titulo" id="fullname">Bruno Diaz</h1>
+                        <h2 class="oficio">Programador Front-End</h2>
+                    </hgroup>
+                </div>
+            </header>
+            <div class="row">
+                <aside>
+                    <div class="card acerca">
+                        <h3 class="card-title">Acerca</h3>
+                        <p class="card-body about-text">Desde chiquito me apacionaba las computadoras tanto que desde el 2003 empec&eacute; a estudiar computaci&oacute;n y finalmente, despu&eacute;s de las idas y venidas de la vida, ahora trabajo en <abbr title="Tecnolog&iacute;as de Informaci&oacute;n">TI</abbr>, pero no conforme, quiero cumplir mi sue&ntilde;o de ni&ntilde;ez, de empezar a programar como profesional. Actualmente hago cursos de capacitaci&oacute;n, mediate el cual me actualizo y pongo a pruebas al m&aacute;ximo mis conocimientos.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Contacto</h3>
+                        <address>
+                            <p><span class="material-icons">phone</span> <span id="phone">12345789</span></p>
+                            <p><span class="material-icons">email</span> <span id="email">user@example.com</span></p>
+                            <p><span class="material-icons">location_on</span> <span id="address">Buenos Aires</span></p>
+                        </address>
+                    </div>
+                </aside>
+                <main>
+                    <section class="container">
+                        <div id="experiencia">
+                            <h3 class="ref-title">
+                                <span class="material-icons">work</span>
+                                Experiencia Laboral
+                            </h3>
+                            <table id="refs-exp">
+                                <tr><td>2020-2022</td><td>T&eacute;cnico Administrativo</td></tr>
+                                <tr><td>2015-2016</td><td>Servicio t&eacute;cnico</td></tr>
+                                <tr><td>2008-2014</td><td>Auxiliar Administrativo</td></tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="container">
+                        <div id="educacion">
+                            <h3 class="ref-title">
+                                <span class="material-icons">school</span>
+                                Educaci&oacute;n
+                            </h3>
+                            <table id="refs-edu">
+                                <tr>
+                                    <td>2023</td>
+                                    <td>
+                                        <details>
+                                            <summary>Argentina Programa 4.0</summary>
+                                            <ul class="summary-list">
+                                                <li>Que es un <abbr title="Integrated Development Environment">IDE</abbr>.</li>
+                                                <li>Estructura de una p&aacute;gina web.</li>
+                                                <li>Elementos sem&aacute;nticos de una p&aacute;gina web.</li>
+                                                <li>Aplicando estilos <abbr title="Cascading Style Sheet">CSS</abbr>.</li>
+                                                <li>Hosting y servicios de alojamiento web.</li>
+                                                <li>Introducci&oacute;n a la programaci&oacute;n con JavaScript.</li>
+                                                <li>Eventos con JavaScript, <abbr title="Document Object Model">DOM</abbr> y <abbr title="Application Program Interface">API</abbr></li>
+                                                <li>Conceptos avanzados: localStorage,<br> geolocalizaci&oacute;n, <abbr title="Progressive Web App">PWA</abbr></li>
+                                            </ul>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr><td>2018</td><td>Plan 111Mil Programadores</td></tr>
+                                <tr><td>2006</td><td>Curso de MS Office</td></tr>
+                                <tr><td>2004</td><td>Curso Operador de Windows</td></tr>
+                                <tr><td>2003</td><td>Curso Operador de PC</td></tr>
+                                <tr><td>2002</td><td>Secundario Completo</td></tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="container">
+                        <div id="educacion">
+                            <h3 class="ref-title">
+                                <span class="material-icons">checklist</span>
+                                Skills
+                            </h3>
+                            <div class="row">
+                                <div class="container">
+                                    <h4 class="ref-title">Hard</h4>
+                                    <ol class="list">
+                                        <li>
+                                            <a href="https://es.wikipedia.org/wiki/Python" rel="noreferer" target="_blank">Python</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://es.wikipedia.org/wiki/SQL" rel="noreferer" target="_blank"><abbr title="Structured Query Language">SQL</abbr></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://es.wikipedia.org/wiki/HTML" rel="noreferer" target="_blank"><abbr title="HyperText Markup Language">HTML</abbr></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://es.wikipedia.org/wiki/CSS" rel="noreferer" target="_blank"><abbr title="Cascading Style Sheet">CSS</abbr></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://es.wikipedia.org/wiki/JavaScript" rel="noreferer" target="_blank">JavaScript</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="container">
+                                    <h4 class="ref-title">Soft</h4>
+                                    <ul>
+                                        <li>Motivado</li>
+                                        <li>Trabajo en equipo</li>
+                                        <li>Responsable</li>
+                                        <li>Divertido</li>
+                                        <li>Alegre</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <footer>
+                        <small class="copyright">2023 &copy; Luchi</small>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
